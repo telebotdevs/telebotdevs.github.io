@@ -269,7 +269,13 @@
         <p>
             <p id="description"><u>Please fill the following information to contact us.</u></p>
             
-            <form id="survey-form" action="https://formspree.io/f/xnqwldzd" method="POST">
+            <form id="survey-form" action=”mailto:yashprakash2005@gmail.com”
+
+            method=”POST”
+            
+            enctype=”multipart/form-data”
+            
+            name=”EmailForm”>
                 
                 <div class"form-section">
                 <label id="name-label" for="name"><p>Name</p></label>
