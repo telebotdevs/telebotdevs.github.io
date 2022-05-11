@@ -225,6 +225,10 @@
     border-radius: 1rem;
     margin: 0;
   }
+  .required:after {
+    content:"      * required";
+    color: rgb(241, 42, 42);
+  }
 
 </style>
 <header id="header">
@@ -278,7 +282,7 @@
                 />
                 </div>
                 <div class"form-section">
-                    <label id="username-label" for="username"><p>Telegram Username</p></label>
+                    <label id="username-label" class="required" for="username"><p>Telegram Username</p></label>
                     <input 
                         type="text"
                         name="username"
@@ -290,7 +294,7 @@
                     </div>
                 
                 <div class"form-section">
-                <label id="email-label" for="email"><p>E-mail</p></label>
+                <label id="email-label" class="required" for="email"><p>E-mail</p></label>
                 <input 
                     type="email"
                     name="email"
@@ -301,7 +305,7 @@
                 />
                 </div>
                 <div class"form-section">
-                    <label id="github-label" for="github"><p>Github profile link</p></label>
+                    <label id="github-label" class="required" for="github"><p>Github profile link</p></label>
                     <input 
                         type="url"
                         name="github"
@@ -335,7 +339,6 @@
                     value="coding"
                     type="checkbox"
                     class="checkbox-input"
-                    required
                     />Coding</label>
                 <label><input
                     name="expertise"
